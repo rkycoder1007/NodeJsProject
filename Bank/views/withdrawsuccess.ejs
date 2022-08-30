@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account created</title>
+    <style>
+        body{
+            background-color: blue;
+        }
+        html{
+            font-size:10px;
+        }
+        .info{
+            margin-top:5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap:1rem;
+        }
+        .info h2{
+            font-size:5rem;
+            color:white;
+        }
+        .info h3{
+            font-size:3rem;
+            color:orange;
+        }
+        .info h3 span{
+            color:rgb(9, 243, 9);
+            font-size: 4rem;
+        }
+        .info p{
+            color:grey;
+            font-size:2rem;
+        }
+    </style>
+</head>
+<body>
+    <%- include("./partials/successhead") %>
+    <div class="info">
+        <h2>Withdraw Successfully</h2>
+        <h3>Account number: <span><%= records.account %></span></h3>
+        <h3>Collect Amount: <span><%= amount %></span></h3>
+        <h3>Update Balance: <span><%= records.balance %></span></h3>
+    </div>
+</body>
+</html>

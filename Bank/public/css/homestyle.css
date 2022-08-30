@@ -1,0 +1,115 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+}
+body{
+    height:100vh;
+    background-color: #277BC0;
+}
+
+/* BOX STYLING*/
+.box{
+    width:70%;
+    height: 30rem;
+    margin:auto;
+    display: flex;
+    
+}
+.box .leftbox,.rightbox{
+    width:50%;
+    height:100%;
+}
+@media (max-width:750px){
+    .box{
+        flex-direction: column;
+        height:100%;
+    }
+    .box .leftbox,.rightbox{
+        width:100%;
+        height:50%;
+    }
+}
+.box .leftbox{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.box .leftbox h2{
+    font-size:2rem;
+    color:grey;
+    padding: 3rem 2rem;
+}
+.box .leftbox form{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    align-items: center;
+    gap:1rem;
+}
+.box .leftbox form input{
+    width: 80%;
+    padding:0.5rem 1rem;
+    font-size: 2rem;
+    font-weight: 500;
+    border: none;
+    border-top: 1px solid grey;
+    border-left: 1px solid grey;
+    box-shadow: 0.5rem 0.5rem 0.5rem rgba(0,0,0,0.2);
+    border-radius: 0.3rem;
+    margin:1rem;
+    overflow: hidden;
+}
+.box .leftbox form input:focus{
+    background-color:antiquewhite;
+}
+.box .leftbox form .submit{
+    width:fit-content;
+    padding:0.5rem 2rem;
+    background-color: green;
+    color:white;
+    border:none;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    cursor:pointer;
+}
+
+.box .leftbox form .submit:hover{
+    background-color: orangered;
+}
+
+.box .leftbox p{
+    font-size: 2rem;
+    color: grey;
+}
+.box .leftbox p span a{
+    text-decoration: none;
+}
+
+
+/*Right box*/
+.rightbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color:white;
+    box-shadow: 0.5rem 0.5rem 0.5rem rgba(0,0,0,0.3);
+}
+.rightbox h2{
+    padding:3rem 0rem;
+}
+.rightbox h2 span a{
+    text-decoration: none;
+}
+@media (max-width:750px){
+    
+    .box .rightbox{
+        align-items: flex-start;
+    }
+}

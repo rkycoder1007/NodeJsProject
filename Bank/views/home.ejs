@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <link rel="stylesheet" href="../css/homestyle.css">
+</head>
+<body>
+    <%- include("./partials/homeHeader") %>
+    <section class="box">
+        <div class="leftbox">
+            <h2>Already Registered</h2>
+            <form action="/login" method="POST">
+                <input type="email" name="email" placeholder="Email ID" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <input type="submit" class="submit" value="Log IN">
+            </form>
+            <p>Forgot Password? <span><a href="/forgotpassword">Click Here</a></span></p>
+        </div>
+        <div class="rightbox">
+            <h2>New User?&nbsp;<span><a href="/register">Register Here</a></span></h2>
+        </div>
+    </section>
+    <script type="text/javascript" src="../script/homescript.js"></script>
+</body>

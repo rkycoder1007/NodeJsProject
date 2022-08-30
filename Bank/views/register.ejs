@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <link rel="stylesheet" href="../css/homestyle.css">
+    <link rel="stylesheet" href="../css/register.css">
+</head>
+<body>
+    <%- include("./partials/homeHeader") %>
+    <section class="formbox">
+        <h2>Registration Form</h2>
+        <form action="/register" method="POST">
+            <div class="formcontrol">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" placeholder="Enter Your Name" required>
+            </div>
+            <div class="formcontrol">
+                <label for="email">Email ID</label>
+                <input type="email" name="email" id="email" placeholder="Enter Email ID" required>
+            </div>
+            <div class="formcontrol">
+                <label for="mbno">Contact Number</label>
+                <input type="text" name="mbno" id="mbno" placeholder="Enter Mobile Number" minlength="10" maxlength="13" required>
+            </div>
+            <div class="formcontrol">
+                <label for="dob">Date of Birth</label>
+                <input type="date" name="dob" id="dob" required>
+            </div>
+            <div class="formcontrol">
+                <label for="village">Village/City:</label>
+                <input type="text" name="village" id="village" placeholder="Enter Village/City Name" required>
+            </div>
+            <div class="formcontrol">
+                <label for="dist">Distric:</label>
+                <input type="text" name="dist" id="dist" placeholder="Enter District Name" required>
+            </div>
+            <div class="formcontrol">
+                <label for="state">State:</label>
+                <input type="text" name="state" id="state" placeholder="Enter State Name" required>
+            </div>
+            <div class="formcontrol">
+                <label for="country">Country:</label>
+                <input type="text" name="country" id="country" placeholder="Enter Country Name" required>
+            </div>
+            <div class="formcontrol">
+                <label for="pincode">Pin Code:</label>
+                <input type="text" name="pincode" id="pincode" placeholder="Enter Pin Code" required>
+            </div>
+            <div class="formcontrol">
+                <label for="password">Password:<span style="color:green;font-size:1.5rem">(Minimum 8 characters)</span></label>
+                <input type="password" name="password" id="password" placeholder="Enter Password" minlength="8" required>
+            </div>
+            <div class="formcontrol">
+                <label for="cpassword">Confirm Password:</label>
+                <input type="password" name="cpassword" id="cpassword" placeholder="Confirm Password" required>
+            </div>
+            <div class="formcontrol">
+                <input type="submit" class="submit" value="Register">
+            </div>
+            
+
+        </form>
+    </section>
+    <script type="text/javascript" src="../script/homescript.js"></script>
+</body>

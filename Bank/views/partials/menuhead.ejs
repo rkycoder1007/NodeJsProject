@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/mainhead.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Menu Head</title>
+</head>
+<body>
+    <section class="head">
+        <div class="profile">
+            <div class="img">
+                <img src="../../image/profile.jpg">
+                <a href="#"><i class="fa-solid fa-camera camera"></i></a>  
+            </div>
+            <p><%= records.name %></p>
+        </div>
+                
+      <ul>
+        <li><a href="/dashboard">Dashboard</a></li>
+        <li><a href="/accountsummary">Account Summary</a></li>
+        <li><a href="#">Account Statement</a></li>
+        <li><a href="/cashwithdraw">Cash Withdraw</a></li>
+        <li><a href="/cashdeposite">Cash Deposite</a></li>
+        <li><a href="#">Payment Transfer</a></li>
+        <li><a href="/changepassword">Change Password</a></li>
+      </ul>
+      <ul>
+        <li>
+            <a href="/signout"><i class="fa-solid fa-arrow-right-from-bracket"></i><span style="margin-left:5px;">Sign Out</span></a>
+        </li>
+      </ul>
+    </section>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: blue;
+        }
+        html{
+            font-size:10px;
+        }
+        .dashboard{
+            display: flex;
+            justify-content: space-between;
+            padding:0px 10rem;
+        }
+        .dashboard li{
+            padding:1rem 2rem;
+            font-size: 3rem;
+            list-style-type: none;
+            margin-bottom: 2rem;
+            background-color: orange;
+            border-radius: 0.5rem;
+        }
+        .dashboard a{
+            text-decoration: none;
+            font-weight: 900;
+            color: green;
+            transition: 0.3s linear;
+        }
+        .dashboard a:hover{
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <div class="dashboard">
+        <div class="leftmenu">
+            <ul>
+                <li><a href="/accountsummary">Account Summary</a></li>
+                <li><a href="#">Account Statement</a></li>
+                <li><a href="/cashwithdraw">Cash Withdraw</a></li>
+              </ul>
+        </div>
+        <div class="rightmenu">
+            <ul>
+                <li><a href="/cashdeposite">Cash Deposite</a></li>
+                <li><a href="#">Payment Transfer</a></li>
+                <li><a href="/changepassword">Change Password</a></li>
+              </ul>
+        </div>
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account summary</title>
+    <style>
+        body{
+            background-color: blue;
+            width: 100%;
+            position: relative;
+        }
+        html{
+            font-size:10px;
+        }
+        .info{
+            width:fit-content;
+            background-color: wheat;
+            display: flex;
+            flex-direction: column;
+            gap:1rem;
+            padding:2rem;
+            border-radius: 0.5rem;
+            position:absolute;
+            left:50%;
+            transform: translateX(-50%);
+            margin:auto;
+        }
+        .info p{
+            font-size:2.5rem;
+            color:blue;
+            text-align: left;
+        }
+        .info p span{
+            color:green;
+            font-weight: 900;
+        }
+    </style>
+</head>
+<body>
+    <%- include("./partials/menuhead") %>
+    <div class="info">
+        <p>Name: <span><%= records.name %></span></p>
+        <p>Date of Birth: <span><%= date %> <%= month %> <%= year %> </span></p>
+        <p>Email ID: <span><%= records.email %></span></p>
+        <p>Mobile Number: <span><%= records.mbno %></span></p>
+        <p>Village/City: <span><%= records.village %></span></p>
+        <p>District: <span><%= records.dist %></span></p>
+        <p>State: <span><%= records.state %></span></p>
+        <p>Country: <span><%= records.country %></span></p>
+        <p>Account Number: <span><%= records.account %></span></p>
+        <p>Balance: <span><%= records.balance %></span></p>
+    </div>
+</body>
+</html>
